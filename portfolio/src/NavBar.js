@@ -5,10 +5,9 @@ const NavBar = () => {
     <div className='flex justify-between'>
       <h1>Jeanie Chea</h1>
       <ul className='flex space-x-6'>
-        <li>Work</li>
-        <li>Education</li>
-        <li>About Me</li>
-        <li>Experience</li>
+        <a href='#home'>Home</a>
+        <a href='#about-me'>About Me</a>
+        <a href='#work'>Work</a>
       </ul>
     </div>
   )
