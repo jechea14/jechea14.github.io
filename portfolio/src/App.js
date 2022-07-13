@@ -1,9 +1,10 @@
 import './App.css';
+import NavBar from './NavBar';
 
 function App() {
   return (
-    <div className="dark:bg-slate-800 h-screen">
-      hello world
+    <div className="min-h-screen px-56">
+      <NavBar/>
     </div>
   );
 }
