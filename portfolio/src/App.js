@@ -1,18 +1,22 @@
 import './App.css';
-import NavBar from './NavBar';
-import IntroCard from './IntroCard';
-import AboutMe from './AboutMe';
-import Work from './Work';
-import Footer from './Footer';
+import NavBar from './Components/NavBar';
+import Intro from './Components/Intro';
+import AboutMe from './Components/AboutMe';
+import Work from './Components/Work';
+import Footer from './Components/Footer';
+import Contact from './Components/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen px-56">
-      <NavBar/>
-      <IntroCard/>
-      <AboutMe/>
-      <Work/>
-      <Footer/>
+    <div className="min-h-screen flex flex-col items-center">
+      <div>
+        <NavBar/>
+        <Intro/>
+        <AboutMe/>
+        <Work/>
+        <Contact/>
+        <Footer/>
+      </div>
     </div>
   );
 }
