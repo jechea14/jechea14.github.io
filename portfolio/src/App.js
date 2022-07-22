@@ -8,7 +8,7 @@ import Contact from './Components/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col items-center px-5">
+    <div className="min-h-screen flex flex-col px-5 md:px-28">
       <div>
         <NavBar/>
         <Intro/>
