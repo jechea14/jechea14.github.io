@@ -1,16 +1,17 @@
 import React from 'react'
 import Button from './Button'
 
-const ProjectCard = ({ title, techUsed, description }) => {
+const ProjectCard = ({ title, techUsed, description, image }) => {
   return (
-    <div className='border text-center pt-4 px-4 my-8'>
-      {/* <img></img> */}
-      <div className='h-20 w-20 border'></div>
-      <h2 className='font-semibold'>{title}</h2>
+    <div className='border rounded-xl border-slate-800 text-center pt-4 px-4 my-4 max-w-sm max-h-sm'>
+      <picture>
+        <img src={image} alt={image}/>
+      </picture>
+      <h1 className='font-semibold text-lg pt-2'>{title}</h1>
 
       <p className='text-xs mb-2'>{techUsed}</p>
       <p className=' pt-2 border-t-2 border-b-2 pb-2'>{description}</p>
-      <div className='flex justify-evenly py-2'>
+      <div className='flex justify-evenly py-4'>
         <Button name={'Demo'}/>
         <Button name={'Code'}/>
       </div>
