@@ -30,7 +30,7 @@ const projects = [
 const Work = () => {
   return (
     <div>
-      <h1 className='text-2xl font-bold text-center pt-10'>Work</h1>
+      <h1 className='text-2xl font-bold text-center pt-10'>Projects</h1>
       <div className='flex flex-col items-center md:grid grid-cols-2 lg:grid-cols-3'>
         {projects.map((project) => {
           return <ProjectCard 
