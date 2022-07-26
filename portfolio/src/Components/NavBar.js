@@ -33,7 +33,7 @@ const NavBar = () => {
       </div>
 
       <div onClick={handleClick} className='md:hidden z-10 cursor-pointer'>
-        {!isMobileNavShown ? <FaBars/> : <FaTimes/>}
+        {!isMobileNavShown ? <FaBars size={32}/> : <FaTimes size={32}/>}
       </div>
     </nav>
   )
