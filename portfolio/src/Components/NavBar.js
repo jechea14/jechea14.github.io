@@ -7,7 +7,7 @@ const NavBar = () => {
   const handleClick = () => setIsMobileNavShown(!isMobileNavShown)
 
   return (
-    <nav className='flex justify-between py-6 items-center w-full'>
+    <nav className='sticky top-0 bg-gray-100 drop-shadow-sm px-5 md:px-28 flex justify-between py-4 items-center w-full'>
       <div className='text-xl font-bold'>
         <h1>Jeanie Chea</h1>
       </div>
@@ -33,7 +33,7 @@ const NavBar = () => {
       </div>
 
       <div onClick={handleClick} className='md:hidden z-10 cursor-pointer'>
-        {!isMobileNavShown ? <FaBars size={32}/> : <FaTimes size={32}/>}
+        {!isMobileNavShown ? <FaBars size={30}/> : <FaTimes size={30}/>}
       </div>
     </nav>
   )
