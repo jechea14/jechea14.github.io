@@ -8,9 +8,9 @@ import Contact from './Components/Contact';
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col px-5 md:px-28">
-      <div>
+    <div className="min-h-screen flex flex-col">
         <NavBar/>
+      <div className='px-5 md:px-28'>
         <Intro/>
         <AboutMe/>
         <Work/>
