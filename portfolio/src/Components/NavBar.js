@@ -7,9 +7,9 @@ const NavBar = () => {
   const handleClick = () => setIsMobileNavShown(!isMobileNavShown)
 
   return (
-    <nav className='sticky top-0 bg-gray-100 drop-shadow-sm px-5 md:px-28 flex justify-between py-4 items-center w-full'>
+    <nav className='sticky top-0 bg-gray-200 drop-shadow-sm px-5 md:px-28 flex justify-between py-4 items-center w-full'>
       <div className='text-xl font-bold'>
-        <h1>Jeanie Chea</h1>
+        <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500'>Jeanie Chea</h1>
       </div>
 
       {/* mobile menu */}

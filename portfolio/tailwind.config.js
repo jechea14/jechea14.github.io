@@ -3,7 +3,11 @@ module.exports = {
   purge: ["./src/**/*.{html,js}"],
   // content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {     
+      gridTemplateColumns: {
+      // autofill wrap grid
+      'wrap': 'repeat(auto-fill, minmax(80px, 1fr))'
+      }},
   },
   plugins: [],
 }

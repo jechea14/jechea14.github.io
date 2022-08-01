@@ -31,8 +31,8 @@ const projects = [
 const Work = () => {
   return (
     <div>
-      <h1 className='text-2xl font-bold text-center pt-10'>Projects</h1>
-      <div className='flex flex-col items-center md:flex-row flex-wrap justify-center'>
+      <h1 className='text-2xl font-bold text-left pt-10'>Projects</h1>
+      <div className='flex flex-col md:flex-row flex-wrap'>
         {projects.map((project) => {
           return <ProjectCard 
                   title={project.title} 
