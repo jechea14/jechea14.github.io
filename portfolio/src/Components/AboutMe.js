@@ -5,10 +5,10 @@ import Skills from './Skills'
 const AboutMe = () => {
   //put education & experience
   return (
-    <div>
-      <h1 className='text-2xl font-bold text-left'>About Me</h1>
+    <section id='about' className='scroll-mt-20'>
+      <h1 className='text-2xl font-bold text-left'>ABOUT ME</h1>
       <Skills/>
-    </div>
+    </section>
   )
 }
 

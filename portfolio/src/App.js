@@ -2,7 +2,7 @@ import './App.css';
 import NavBar from './Components/NavBar';
 import Intro from './Components/Intro';
 import AboutMe from './Components/AboutMe';
-import Work from './Components/Work';
+import Projects from './Components/Projects';
 import Footer from './Components/Footer';
 import Contact from './Components/Contact';
 
@@ -13,7 +13,7 @@ function App() {
       <div className='px-5 md:px-28'>
         <Intro/>
         <AboutMe/>
-        <Work/>
+        <Projects/>
         <Contact/>
         <Footer/>
       </div>

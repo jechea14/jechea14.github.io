@@ -28,10 +28,10 @@ const projects = [
   }
 ]
 
-const Work = () => {
+const Projects = () => {
   return (
-    <div>
-      <h1 className='text-2xl font-bold text-left pt-10'>Projects</h1>
+    <section id='projects' className='scroll-mt-10'>
+      <h1 className='text-2xl font-bold text-left pt-10'>PROJECTS</h1>
       <div className='flex flex-col md:flex-row flex-wrap'>
         {projects.map((project) => {
           return <ProjectCard 
@@ -42,8 +42,8 @@ const Work = () => {
         })
         }
       </div>
-    </div>
+    </section>
   )
 }
 
-export default Work
+export default Projects
