@@ -32,7 +32,8 @@ const Projects = () => {
   return (
     <section id='projects' className='scroll-mt-10'>
       <h1 className='text-2xl font-bold text-left pt-10'>PROJECTS</h1>
-      <div className='flex flex-col md:flex-row flex-wrap'>
+      {/* <div className='flex flex-col md:flex-row flex-wrap'> */}
+      <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4'>
         {projects.map((project) => {
           return <ProjectCard 
                   title={project.title} 

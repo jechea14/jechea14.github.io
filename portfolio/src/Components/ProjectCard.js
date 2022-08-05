@@ -3,7 +3,7 @@ import Button from './Button'
 
 const ProjectCard = ({ title, techUsed, description, image }) => {
   return (
-    <div className='border rounded-xl text-center bg-gray-50 my-4 shadow-md md:w-96'>
+    <div className='border rounded-xl text-center bg-gray-50 shadow-md'>
       <picture>
         <img src={image} alt={image} className='rounded-tl-lg rounded-tr-lg'/>
       </picture>
