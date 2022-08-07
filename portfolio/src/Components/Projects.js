@@ -1,7 +1,8 @@
 import React from 'react'
 import ProjectCard from './ProjectCard'
 import advice_generator_app from '../images/advice_generator_app.png'
-import rs_clan_web_scraper from '../images/rs_clan_web_scraper.png'
+import rs_clan_comp_scraper from '../images/rs_clan_comp_scraper.png'
+import backend_catalog_integration from '../images/backend_catalog_integration.png'
 
 const projects = [
   {
@@ -25,14 +26,15 @@ const projects = [
     id: 3,
     title: 'Backend Store Catalog Integration',
     tech: 'Python, Pandas, NumPy, API',
-    desc: 'Integrated sample client store catalog data into a Flask ingestion REST API with authentication. Cleaned and transformed sample client data then used HTTP requests to send data into a sample api given user authentication.'
+    desc: 'Integrated sample client store catalog data into a Flask ingestion REST API with authentication. Cleaned and transformed sample client data then used HTTP requests to send data into a sample api given user authentication.',
+    img: `${backend_catalog_integration}`
   },
   {
     id: 4,
     title: 'RuneScape Clan Competition Web Scraper',
     tech: 'Python, Pandas, Requests, Selenium',
     desc: 'Developed an automated game competition web scraper to scrape data off of a RuneScape player tracking website and calculate competition results, which reduced the time required to prepare results by 80%.',
-    img: `${rs_clan_web_scraper}`,
+    img: `${rs_clan_comp_scraper}`,
     linkDemo: 'https://www.youtube.com/watch?v=mAiOTb76Poc',
     linkCode: 'https://github.com/jechea14/Automated-RS-Clan-DXP-Competition'
   }

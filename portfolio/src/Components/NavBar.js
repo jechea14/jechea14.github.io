@@ -26,7 +26,7 @@ const NavBar = () => {
   const handleClick = () => setIsMobileNavShown(!isMobileNavShown)
 
   return (
-    <nav className='sticky top-0 bg-gray-100 drop-shadow-sm px-5 md:px-28 flex justify-between py-4 items-center w-full'>
+    <nav className='sticky top-0 bg-gray-100 drop-shadow-sm px-5 md:px-28 flex justify-between py-4 items-center w-full 2xl:px-0'>
       <div className='text-xl font-bold'>
         <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500'>Jeanie Chea</h1>
       </div>
@@ -47,7 +47,7 @@ const NavBar = () => {
         <ul className='md:flex space-x-8 text-slate-600 hidden'>
           {
               links.map((link) => (
-                <a href={`#${link.link}`} key={link.id} className='hover:text-slate-900 transition capitalize'>{link.link}</a>
+                <a href={`#${link.link}`} key={link.id} className='hover:text-slate-900 transition capitalize font-semibold'>{link.link}</a>
               ))
           }
         </ul>
