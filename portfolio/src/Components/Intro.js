@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa'
+import { FiMail } from 'react-icons/fi'
 import self_image from '../images/self_image.jpg'
 
 const Intro = () => {
@@ -16,12 +17,15 @@ const Intro = () => {
         <p className='text-center md:text-left md:mt-4 md:max-w-sm'>A Computer Engineer based in California, USA with a passion in front end web development.</p>
 
         {/* social media icons and links */}
-        <div className='flex justify-center mt-10'>
-          <button className='mr-4 mt-4'>
+        <div className='flex justify-evenly mt-10 px-12'>
+          <button className=''>
             <a href='https://www.linkedin.com/in/jeanie-chea-765055151/' target='_blank'><FaLinkedin size={40} color={'blue'}/></a>
           </button>
-          <button className='mx-4 mt-4'>
+          <button className=''>
             <a href='https://github.com/jechea14' target='_blank'><FaGithubSquare size={40}/></a>
+          </button>
+          <button className=''>
+            <a href='mailto:chea.jeanie@gmail.com' target='_blank'><FiMail size={40}/></a>
           </button>
         </div>
       </div>

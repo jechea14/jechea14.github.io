@@ -25,18 +25,34 @@ const projects = [
   {
     id: 3,
     title: 'Backend Store Catalog Integration',
-    tech: 'Python, Pandas, NumPy, API',
+    tech: 'Python3, Pandas, NumPy, API',
     desc: 'Integrated sample client store catalog data into a Flask ingestion REST API with authentication. Cleaned and transformed sample client data then used HTTP requests to send data into a sample api given user authentication.',
     img: `${backend_catalog_integration}`
   },
   {
     id: 4,
     title: 'RuneScape Clan Competition Web Scraper',
-    tech: 'Python, Pandas, Requests, Selenium',
+    tech: 'Python3, Pandas, Requests, Selenium',
     desc: 'Developed an automated game competition web scraper to scrape data off of a RuneScape player tracking website and calculate competition results, which reduced the time required to prepare results by 80%.',
     img: `${rs_clan_comp_scraper}`,
     linkDemo: 'https://www.youtube.com/watch?v=mAiOTb76Poc',
     linkCode: 'https://github.com/jechea14/Automated-RS-Clan-DXP-Competition'
+  },
+  {
+    id: 5,
+    title: 'Inventory Management REST API',
+    tech: 'Python3, Django, Django REST, SQLite',
+    desc: 'Implemented a basic REST inventory management API with authentication and permissions. Created CRUD operatin views and used SQLite database to store data.',
+    linkDemo: 'https://www.youtube.com/watch?v=PM5A7jvtxFM',
+    linkCode: 'https://github.com/jechea14/django-inventory-api'
+  },
+  {
+    id: 6,
+    title: 'RuneScape Archaeology Discord Bot Web Scraper',
+    tech: 'Python3, Requests, Discord.py',
+    linkDemo: 'https://www.youtube.com/watch?v=sEGjhaAngnM',
+    linkCode: 'https://github.com/jechea14/RSArchArtefactMaterialCalculator'
+
   }
 ]
 

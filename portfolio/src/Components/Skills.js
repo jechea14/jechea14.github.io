@@ -1,7 +1,8 @@
 import React from 'react'
 import SkillCard from './SkillCard'
 import { FaHtml5, FaCss3Alt, FaPython, FaReact } from 'react-icons/fa'
-import { SiJavascript, SiTailwindcss } from 'react-icons/si'
+import { SiJavascript, SiTailwindcss, SiCplusplus } from 'react-icons/si'
+import { TbApi } from 'react-icons/tb'
 
 const skills = [
   {
@@ -34,6 +35,16 @@ const skills = [
     icon: <FaPython size={50}/>,
     name: 'Python3'
   },
+  {
+    id: 7,
+    icon: <TbApi size={50}/>,
+    name: 'REST API'
+  },
+  {
+    id: 8,
+    icon: <SiCplusplus size={50}/>,
+    name: 'C++'
+  }
 ]
 
 const Skills = () => {
