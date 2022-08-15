@@ -12,10 +12,14 @@ const links = [
   },
   {
     id: 3,
-    link: 'projects'
+    link: 'skills'
   },
   {
     id: 4,
+    link: 'projects'
+  },
+  {
+    id: 5,
     link: 'contact'
   }
 ]
@@ -36,7 +40,7 @@ const NavBar = () => {
         <ul className={!isMobileNavShown ? 'hidden' : 'absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center text-slate-900 bg-slate-200'}>
           {
             links.map((link) => (
-              <a href={`#${link.link}`} key={link.id} onClick={() => setIsMobileNavShown(!isMobileNavShown)} className='hover:text-slate-900 transition py-6 text-4xl capitalize'>{link.link}</a>
+              <a href={`#${link.link}`} key={link.id} onClick={() => setIsMobileNavShown(!isMobileNavShown)} className='hover:text-slate-900 transition py-6 text-4xl capitalize hover:cursor-pointer'>{link.link}</a>
             ))
           }
         </ul>
@@ -44,7 +48,7 @@ const NavBar = () => {
 
       {/* desktop menu */}
       <div>
-        <ul className='md:flex space-x-8 text-gray-600 hidden'>
+        <ul className='md:flex space-x-8 text-gray-600 hidden hover:cursor-pointer'>
           {
               links.map((link) => (
                 <a href={`#${link.link}`} key={link.id} className='hover:text-slate-900 transition capitalize font-semibold'>{link.link}</a>

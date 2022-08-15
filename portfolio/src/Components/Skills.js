@@ -49,8 +49,8 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div>
-      <h1 className='text-xl font-bold text-left pt-10'>SKILLS</h1>
+    <section id='skills' className='scroll-mt-20'>
+      <h1 className='text-2xl font-bold text-left'>SKILLS</h1>
       <div className='grid grid-cols-wrap gap-6 rounded-xl py-6'>
         {
           skills.map((skill) => (
@@ -58,7 +58,7 @@ const Skills = () => {
           ))
         }
       </div>
-    </div>
+    </section>
   )
 }
 

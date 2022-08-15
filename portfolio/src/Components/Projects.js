@@ -3,6 +3,8 @@ import ProjectCard from './ProjectCard'
 import advice_generator_app from '../images/advice_generator_app.png'
 import rs_clan_comp_scraper from '../images/rs_clan_comp_scraper.png'
 import backend_catalog_integration from '../images/backend_catalog_integration.png'
+import inventory_rest_api from '../images/inventory_rest_api.png'
+import rs_web_scrape_discord_bot from '../images/rs_web_scrape_discord_bot.png'
 
 const projects = [
   {
@@ -43,13 +45,16 @@ const projects = [
     title: 'Inventory Management REST API',
     tech: 'Python3, Django, Django REST, SQLite',
     desc: 'Implemented a basic REST inventory management API with authentication and permissions. Created CRUD operatin views and used SQLite database to store data.',
+    img: `${inventory_rest_api}`,
     linkDemo: 'https://www.youtube.com/watch?v=PM5A7jvtxFM',
     linkCode: 'https://github.com/jechea14/django-inventory-api'
   },
   {
     id: 6,
-    title: 'RuneScape Archaeology Discord Bot Web Scraper',
+    title: 'RuneScape Archaeology Web Scraping Discord Bot',
     tech: 'Python3, Requests, Discord.py',
+    desc: 'Developed a Discord bot to web scrape RuneScape Wiki web pages based on user input to extract data. Calculated and displayed the total cost in RuneScape currency and amount of materials needed.',
+    img: `${rs_web_scrape_discord_bot}`,
     linkDemo: 'https://www.youtube.com/watch?v=sEGjhaAngnM',
     linkCode: 'https://github.com/jechea14/RSArchArtefactMaterialCalculator'
 
@@ -58,8 +63,8 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id='projects' className='scroll-mt-10'>
-      <h1 className='text-2xl font-bold text-left pt-10'>PROJECTS</h1>
+    <section id='projects' className='scroll-mt-20'>
+      <h1 className='text-2xl font-bold text-left'>PROJECTS</h1>
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4'>
         {projects.map((project) => {
           return <ProjectCard 
