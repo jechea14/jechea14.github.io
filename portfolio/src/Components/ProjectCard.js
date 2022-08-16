@@ -7,7 +7,8 @@ const ProjectCard = ({ title, techUsed, description, image, linkDemo, linkCode, 
       <div>
         {/* project picture */}
         <picture className=''>
-          <img src={image} alt={image} className=' 2xl:h-52 2xl:w-full md:w-auto md:h-60 xl:w-auto xl:h-64 rounded-tl-lg rounded-tr-lg'/>
+        {/* 2xl:h-52 2xl:w-full md:w-auto md:h-60 xl:w-auto xl:h-64  */}
+          <img src={image} alt={image} className='rounded-tl-lg rounded-tr-lg'/>
         </picture>
         <div className='pt-4 px-4'>
           {/* project title */}
@@ -21,7 +22,7 @@ const ProjectCard = ({ title, techUsed, description, image, linkDemo, linkCode, 
 
       {/* Demo and Code buttons */} 
       <div className='border-t-2 mx-4'>
-        <div className='flex justify-around py-4'>
+        <div className='flex justify-evenly py-4'>
           <Button name={'Demo'} link={linkDemo} id={id}/>
           <Button name={'Code'} link={linkCode} id={id}/>
         </div>
