@@ -4,15 +4,16 @@ const ContactForm = () => {
   return (
     <div>
       <form className=' border rounded-xl p-10 bg-gray-50 shadow-md'>
+      WORK IN PROGRESS
         <div className='flex flex-col justify-center'>
           <label for='name'>Name:</label>
-          <input type='text' name='name' className='border border-gray-300 rounded-md' required/>
+          <input type='text' name='name' className='border border-gray-300 rounded-md px-2' required/>
 
           <label for='email'>Email:</label>
-          <input type='email' name='email' className='border border-gray-300 rounded-md' required/>
+          <input type='email' name='email' className='border border-gray-300 rounded-md px-2' required/>
 
           <label for='message'>Message:</label>
-          <textarea name='message' cols='33' className='border border-gray-300 rounded-md' required/>
+          <textarea name='message' rows='10' className='border border-gray-300 rounded-md px-2' required/>
 
         </div>
 
