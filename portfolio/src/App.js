@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import NavBar from './Components/NavBar';
 import Intro from './Components/Intro';
 import AboutMe from './Components/AboutMe';
