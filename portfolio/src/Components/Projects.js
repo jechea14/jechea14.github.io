@@ -12,7 +12,7 @@ const projects = [
     title: 'Portfolio Website',
     tech: 'ReactJS, TailwindCSS',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, veniam? Vitae animi eos praesentium iure sunt fugit nobis sequi quisquam. Facilis nam nisi consequatur architecto! Debitis, veniam. Voluptates, pariatur nesciunt?Totam esse pariatur dorem, quidem quas doloremque reprehenderit. Iusto illo cum repellendus, doloribus illum',
-    linkDemo: 'https://jechea14.github.io/',
+    linkDemo: 'https://jeaniechea.vercel.app',
     linkCode: 'https://github.com/jechea14/jechea14.github.io'
   },
   {
