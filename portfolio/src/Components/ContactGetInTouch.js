@@ -10,7 +10,7 @@ const ContactGetInTouch = () => {
         <div className='space-y-2'>
             <h2 className='text-lg font-medium'>Get in Touch</h2>
             <div className='flex items-center space-x-8 border rounded-md px-8 py-4 bg-gray-50 shadow-md'>
-                <a href='mailto:chea.jeanie@gmail.com' target='_blank'><FiMail size={40}/></a>
+                <a href='mailto:chea.jeanie@gmail.com' target='_blank' rel="noreferrer"><FiMail size={40}/></a>
                 <h2>chea.jeanie@gmail.com</h2>
             </div>
         </div>
@@ -18,7 +18,7 @@ const ContactGetInTouch = () => {
         <div className='space-y-2'>
             <h2 className='text-lg font-medium'>Let's Connect!</h2>
             <div className='flex items-center space-x-8 border rounded-md px-8 py-4 bg-gray-50 shadow-md'>
-                <a href='https://www.linkedin.com/in/jeanie-chea-765055151/' target='_blank'><FaLinkedin size={40}/></a>
+                <a href='https://www.linkedin.com/in/jeanie-chea-765055151/' target='_blank' rel="noreferrer"><FaLinkedin size={40}/></a>
                 <h2>linkedin.com/in/jeanie-chea-765055151/</h2>
             </div>
         </div>

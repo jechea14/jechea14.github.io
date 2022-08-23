@@ -1,19 +1,27 @@
 import React from 'react'
-import Skills from './Skills'
-
 
 const AboutMe = () => {
-  //put education & experience
   return (
     <section id='about' className='scroll-mt-20'>
       <h1 className='text-2xl font-bold text-left'>ABOUT ME</h1>
-      <div className='py-6 px-10 border rounded-xl bg-gray-50 shadow-md hover:shadow-xl hover:transition'>
+      <div className='lg:px-15 lg:text-lg p-10 border rounded-xl bg-gray-50 shadow-md hover:shadow-xl hover:transition space-y-3'>
         <p>
-          
+          I am a budding front-end software engineer with a background in computer engineering. 
+          I started my journey as a software developer after obtaining my computer engineering degree from San Jose State University.
+        </p>
+        <p>
+          I learned Python and enjoyed it from building web scrapers and APIs and wanted to go into back-end web development with Python.  
+          However, I became very interested in front-end development while developing my web scrapers as I wanted to display data on a webpage.
+          After learning HTML, CSS, JavaScript, and other front-end technologies, I've fell in love and wanted to learn more about the front-end world and pursue front-end web development as a software engineer.
+
+        </p>
+        <p>
+          I've discovered my passion in the web development world and the beauty of building wonderful web applications.
+          I love coding and solving problems through code, and I am excited to work alongside other engineers and learn so much more!
+          I'm looking for opportunities in junior/new grad front-end web development positions to start my career and learn among professionals.
+
         </p>
       </div>
-      {/* <h2 className='text-lg font-bold text-left pt-10'>EDUCATION</h2>
-      <p>Bachelor of Science in Computer Engineering - San Jose State University</p> */}
       
     </section>
   )
