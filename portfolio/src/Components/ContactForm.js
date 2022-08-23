@@ -17,7 +17,7 @@ const ContactForm = () => {
 
   return (
     <div className='md:flex-auto lg:basis-1/2 border rounded-md py-4 px-8 bg-gray-50 shadow-md hover:shadow-xl hover:transition'>
-      <h2 className='text-lg font-medium mb-4'>Contact Form</h2>
+      <h2 className='text-lg font-medium mb-4'>Contact Me</h2>
       <form onSubmit={sendEmail} className=' '>
         <div className='flex flex-col justify-center space-y-5'>
           <input type='text' name='name' placeholder='Name*' className='border border-gray-300 rounded-md px-4 py-2' required/>

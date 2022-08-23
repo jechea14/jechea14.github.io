@@ -5,13 +5,15 @@ import rs_clan_comp_scraper from '../images/rs_clan_comp_scraper.png'
 import backend_catalog_integration from '../images/backend_catalog_integration.png'
 import inventory_rest_api from '../images/inventory_rest_api.png'
 import rs_web_scrape_discord_bot from '../images/rs_web_scrape_discord_bot.png'
+import portfolio from '../images/portfolio.png'
 
 const projects = [
   {
     id: 1,
     title: 'Portfolio Website',
     tech: 'ReactJS, TailwindCSS',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, veniam? Vitae animi eos praesentium iure sunt fugit nobis sequi quisquam. Facilis nam nisi consequatur architecto! Debitis, veniam. Voluptates, pariatur nesciunt?Totam esse pariatur dorem, quidem quas doloremque reprehenderit. Iusto illo cum repellendus, doloribus illum',
+    desc: 'Designed and developed a personal portfolio to showcase skills and projects. Utilized mobile-first approach and semantic HTML for accessibility.',
+    img: `${portfolio}`,
     linkDemo: 'https://jeaniechea.vercel.app',
     linkCode: 'https://github.com/jechea14/jechea14.github.io'
   },
