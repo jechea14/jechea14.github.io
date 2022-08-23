@@ -3,7 +3,7 @@ import React from 'react'
 const AboutMe = () => {
   return (
     <section id='about' className='scroll-mt-20'>
-      <h1 className='text-2xl font-bold text-left'>ABOUT ME</h1>
+      <h1 className='text-2xl font-bold text-left pb-6 pt-10'>ABOUT ME</h1>
       <div className='lg:px-15 lg:text-lg p-10 border rounded-xl bg-gray-50 shadow-md hover:shadow-xl hover:transition space-y-3'>
         <p>
           I am a budding front-end software engineer with a background in computer engineering. 
