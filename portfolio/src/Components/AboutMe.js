@@ -16,7 +16,6 @@ const AboutMe = () => {
 
         </p>
         <p>
-          I've discovered my passion in the web development world and the beauty of building wonderful web applications.
           I love coding and solving problems through code, and I am excited to work alongside other engineers and learn so much more!
           I'm looking for opportunities in junior/new grad front-end web development positions to start my career and learn among professionals.
 
