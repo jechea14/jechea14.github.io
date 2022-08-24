@@ -9,5 +9,6 @@ module.exports = {
       'wrap': 'repeat(auto-fill, minmax(100px, 1fr))'
       }},
   },
+  darkMode: 'class',
   plugins: [],
 }
