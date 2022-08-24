@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutMe = () => {
   return (
-    <section id='about' className='scroll-mt-20'>
+    <section id='about' className='scroll-mt-8'>
       <h1 className='text-2xl font-bold text-left pb-6 pt-10'>ABOUT ME</h1>
       <div className='lg:px-15 lg:text-lg p-10 border rounded-xl bg-gray-50 shadow-md hover:shadow-xl hover:transition space-y-3'>
         <p>
@@ -12,7 +12,7 @@ const AboutMe = () => {
         <p>
           I learned Python and enjoyed it from building web scrapers and APIs and wanted to go into back-end web development with Python.  
           However, I became very interested in front-end development while developing my web scrapers as I wanted to display data on a webpage.
-          After learning HTML, CSS, JavaScript, and other front-end technologies, I've fell in love and wanted to learn more about the front-end world and pursue front-end web development as a software engineer.
+          After learning HTML, CSS, JavaScript, and other front-end technologies, I fell in love with frontend and wanted to learn more about the front-end world and pursue front-end web development as a software engineer.
 
         </p>
         <p>
