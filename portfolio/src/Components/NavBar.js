@@ -60,11 +60,11 @@ const NavBar = () => {
               <a href={`#${link.link}`} key={link.id} onClick={() => setIsMobileNavShown(!isMobileNavShown)} className='hover:text-slate-900 transition py-6 text-4xl capitalize hover:cursor-pointer'>{link.link}</a>
             ))
           }
-          <div onClick={toggleTheme}>
+          {/* <div onClick={toggleTheme}>
             {
               darkMode ? <MdNightlight size={40}/> : <MdOutlineLightMode size={40}/>
             }
-          </div>
+          </div> */}
         </ul>
       </div>
 
@@ -77,12 +77,11 @@ const NavBar = () => {
               ))
           }
 
-          <div onClick={toggleTheme}>
+          {/* <div onClick={toggleTheme}>
             {
               darkMode ? <MdNightlight size={20}/> : <MdOutlineLightMode size={20}/>
-            }
-            
-          </div>
+            }           
+          </div> */}
         </ul>
       </div>
 
