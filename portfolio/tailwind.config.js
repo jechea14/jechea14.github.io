@@ -6,7 +6,7 @@ module.exports = {
     extend: {     
       gridTemplateColumns: {
       // autofill wrap grid
-      'wrap': 'repeat(auto-fill, minmax(100px, 1fr))'
+      'wrap': 'repeat(auto-fill, minmax(85px, 1fr))'
       }},
   },
   darkMode: 'class',
