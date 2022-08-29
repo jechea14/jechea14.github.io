@@ -18,13 +18,13 @@ const Intro = () => {
 
         {/* social media icons and links */}
         <div className='flex justify-evenly mt-10 px-12'>
-          <button className=''>
+          <button>
             <a href='https://www.linkedin.com/in/jeanie-chea-765055151/' target='_blank' rel="noreferrer"><FaLinkedin size={40} color={'blue'}/></a>
           </button>
-          <button className=''>
+          <button>
             <a href='https://github.com/jechea14' target='_blank' rel="noreferrer"><FaGithubSquare size={40}/></a>
           </button>
-          <button className=''>
+          <button>
             <a href='mailto:chea.jeanie@gmail.com' target='_blank' rel="noreferrer"><FiMail size={40}/></a>
           </button>
         </div>

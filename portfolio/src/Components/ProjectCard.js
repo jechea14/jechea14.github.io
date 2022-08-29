@@ -7,7 +7,6 @@ const ProjectCard = ({ title, techUsed, description, image, linkDemo, linkCode, 
       <div>
         {/* project picture */}
         <picture className=''>
-        {/* 2xl:h-52 2xl:w-full md:w-auto md:h-60 xl:w-auto xl:h-64  */}
           <img src={image} alt={image} className='rounded-tl-lg rounded-tr-lg'/>
         </picture>
         <div className='pt-4 px-4'>
