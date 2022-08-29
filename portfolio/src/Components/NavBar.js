@@ -52,7 +52,7 @@ const NavBar = () => {
 
 
   return (
-    <nav className='overflow-x-hidden dark:bg-slate-900 sticky top-0 bg-gray-100 border-b-2 px-5 md:px-28 flex justify-between py-4 items-center 2xl:px-0 dark:border-b-slate-700'>
+    <nav className='dark:bg-slate-900 sticky top-0 bg-gray-100 border-b-2 px-5 md:px-28 flex justify-between py-4 items-center 2xl:px-0 dark:border-b-slate-700'>
       <div className='text-xl font-semibold'>
         <h1 className='text-transparent bg-clip-text bg-gradient-to-r from-sky-500 to-indigo-500'><a href='#'>Jeanie Chea</a></h1>
       </div>
