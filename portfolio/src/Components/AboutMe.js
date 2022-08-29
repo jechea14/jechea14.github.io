@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <section id='about' className='scroll-mt-8'>
       <h1 className='text-2xl font-bold text-left pb-6 pt-10 dark:text-gray-200'>ABOUT ME</h1>
-      <div className='lg:px-15 lg:text-lg p-10 border rounded-xl bg-gray-50 hover:shadow-xl hover:transition space-y-3 dark:text-gray-200 dark:bg-slate-700 dark:border-slate-700'>
+      <div className='lg:px-15 lg:text-lg p-10 border rounded-xl bg-gray-50 space-y-3 dark:text-gray-200 dark:bg-slate-700 dark:border-slate-700'>
         <p>
           I am a blooming front-end software engineer with a background in computer engineering. I started my journey as a software developer after obtaining my <span className='text-purple-600 font-semibold dark:text-purple-300'>Bachelors in Computer Engineering from San Jose State University</span>.
         </p>

@@ -16,7 +16,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className='md:flex-auto lg:basis-1/2 border rounded-md py-4 px-8 bg-gray-50 hover:shadow-xl hover:transition dark:bg-slate-800 dark:border-slate-800'>
+    <div className='md:flex-auto lg:basis-1/2 border rounded-md py-4 px-8 bg-gray-50 dark:bg-slate-800 dark:border-slate-800'>
       <h2 className='text-lg font-medium mb-4'>Contact Me</h2>
       <form onSubmit={sendEmail} className=' '>
         <div className='flex flex-col justify-center space-y-5'>
