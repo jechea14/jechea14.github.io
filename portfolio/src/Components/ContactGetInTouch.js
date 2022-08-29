@@ -6,7 +6,7 @@ import { HiLocationMarker } from 'react-icons/hi'
 
 const ContactGetInTouch = () => {
   return (
-    <div className='md:flex-auto border rounded-md px-8 py-4 bg-gray-100 shadow-md space-y-6 hover:shadow-xl hover:transition dark:bg-slate-800 dark:border-slate-700'>
+    <div className='md:flex-auto border rounded-md px-8 py-4 bg-gray-100 space-y-6 hover:shadow-xl hover:transition dark:bg-slate-800 dark:border-slate-700'>
         <div className='space-y-2'>
             <h2 className='text-lg font-medium'>Get in Touch</h2>
             <div className='flex items-center space-x-8 border rounded-md px-8 py-4 bg-gray-50 shadow-md dark:bg-slate-700 dark:border-slate-700'>
