@@ -10,7 +10,7 @@ import Contact from './Components/Contact';
 
 function App() {
   return (
-    <section className="dark:bg-slate-900 min-h-screen flex flex-col 2xl:max-w-7xl">
+    <section className="dark:bg-slate-900 min-h-screen flex flex-col max-w-7xl">
         <NavBar/>
       <div className='px-5 md:px-28 2xl:px-0 space-y-10'>
         <Intro/>

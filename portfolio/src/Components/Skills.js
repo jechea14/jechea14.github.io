@@ -49,9 +49,9 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section id='skills' className='scroll-mt-8'>
+    <section id='skills' className='scroll-mt-8 dark:text-gray-200 '>
       <h1 className='text-2xl font-bold text-left pt-10 pb-6'>SKILLS</h1>
-      <div className='grid grid-cols-wrap gap-6 rounded-xl'>
+      <div className='grid grid-cols-wrap gap-6 rounded-xl '>
         {
           skills.map((skill) => (
             <SkillCard key={skill.id} icon={skill.icon} name={skill.name}/>
