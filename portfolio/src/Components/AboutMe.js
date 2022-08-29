@@ -3,11 +3,11 @@ import React from 'react'
 const AboutMe = () => {
   return (
     <section id='about' className='scroll-mt-8'>
-      <h1 className='text-2xl font-bold text-left pb-6 pt-10'>ABOUT ME</h1>
-      <div className='lg:px-15 lg:text-lg p-10 border rounded-xl bg-gray-50 shadow-md hover:shadow-xl hover:transition space-y-3'>
+      <h1 className='text-2xl font-bold text-left pb-6 pt-10 dark:text-gray-200'>ABOUT ME</h1>
+      <div className='lg:px-15 lg:text-lg p-10 border rounded-xl bg-gray-50 hover:shadow-xl hover:transition space-y-3 dark:text-gray-200 dark:bg-slate-700 dark:border-slate-700'>
         <p>
           I am a blooming front-end software engineer with a background in computer engineering. 
-          I started my journey as a software developer after obtaining my <span className='text-purple-600 font-semibold'>Bachelors in Computer Engineering from San Jose State University</span>.
+          I started my journey as a software developer after obtaining my <span className='text-purple-600 font-semibold dark:text-purple-300'>Bachelors in Computer Engineering from San Jose State University</span>.
         </p>
         <p>
           I learned Python and enjoyed it from building <span className='hover:cursor-pointer underline'><a href='https://github.com/jechea14/Automated-RS-Clan-DXP-Competition' target='_blank'>web scrapers</a></span> and <span className='hover:cursor-pointer underline'><a href='https://github.com/jechea14/django-inventory-api' target='_blank'>APIs</a></span> and wanted to go into back-end web development with Python.  
@@ -20,8 +20,7 @@ const AboutMe = () => {
           I'm looking for opportunities in junior/new grad front-end web development positions to start my career and learn among professionals.
 
         </p>
-      </div>
-      
+      </div>      
     </section>
   )
 }

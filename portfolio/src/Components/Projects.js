@@ -10,7 +10,7 @@ import portfolio from '../images/portfolio.png'
 const projects = [
   {
     id: 1,
-    title: 'Portfolio Website',
+    title: 'Personal Portfolio Website',
     tech: 'ReactJS, TailwindCSS',
     desc: 'Designed and developed a personal portfolio to showcase skills and projects. Utilized mobile-first approach and semantic HTML for accessibility.',
     img: `${portfolio}`,
@@ -65,7 +65,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id='projects' className='scroll-mt-8'>
+    <section id='projects' className='scroll-mt-8 dark:text-gray-200'>
       <h1 className='text-2xl font-bold text-left pb-6 pt-10'>PROJECTS</h1>
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 lg:grid-cols-3'>
         {projects.map((project) => {
