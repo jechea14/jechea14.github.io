@@ -3,7 +3,7 @@ import Button from './Button'
 
 const ProjectCard = ({ title, techUsed, description, image, linkDemo, linkCode, id}) => {
   return (
-    <div className='flex flex-col justify-between border rounded-xl text-center bg-gray-50 dark:bg-slate-700 dark:border-slate-700'>  
+    <div className='flex flex-col justify-between border rounded-xl text-center bg-gray-50 shadow-md hover:shadow-xl hover:transition dark:bg-slate-700 dark:border-slate-700'>  
       <div>
         {/* project picture */}
         <picture className=''>
