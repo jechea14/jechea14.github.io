@@ -63,7 +63,7 @@ const NavBar = () => {
           
           {
             links.map((link) => (
-              <a href={`#${link.link}`} key={link.id} onClick={() => setIsMobileNavShown(!isMobileNavShown)} className='hover:text-gray-900 transition py-6 text-4xl capitalize hover:cursor-pointer'>{link.link}</a>
+              <a href={`#${link.link}`} key={link.id} onClick={() => setIsMobileNavShown(!isMobileNavShown)} className='hover:text-purple-700 transition py-6 text-4xl capitalize hover:cursor-pointer dark:hover:text-purple-500'>{link.link}</a>
             ))
           }
           <div onClick={toggleTheme} className='hover:cursor-pointer pt-5'>
