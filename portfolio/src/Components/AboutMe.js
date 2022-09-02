@@ -12,7 +12,7 @@ const AboutMe = () => {
         <p>
           I learned Python and enjoyed it from building <span className='hover:cursor-pointer underline'><a href='https://github.com/jechea14/Automated-RS-Clan-DXP-Competition' target='_blank'>web scrapers</a></span> and <span className='hover:cursor-pointer underline'><a href='https://github.com/jechea14/django-inventory-api' target='_blank'>APIs</a></span> and wanted to go into back-end web development with Python. 
           However, I became very interested in front-end development while developing my web scrapers as I wanted to display data on a webpage. 
-          After learning HTML, CSS, JavaScript, and other front-end technologies, I fell in love with frontend and wanted to learn more about the front-end world and pursue front-end web development as a software engineer.
+          After learning HTML, CSS, JavaScript, and other front-end technologies, I fell in love with front-end and wanted to learn more about the front-end world and pursue front-end web development as a software engineer.
         </p>
         <p>
           I love coding and solving problems through code, and I am excited to work alongside other engineers and learn so much more! 
