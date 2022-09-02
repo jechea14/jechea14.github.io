@@ -79,7 +79,7 @@ const NavBar = () => {
         <ul className='md:flex space-x-8 text-gray-600 dark:text-gray-200 hidden hover:cursor-pointer items-center'>
           {
             links.map((link) => (
-              <a href={`#${link.link}`} key={link.id} className='hover:text-slate-900 transition capitalize font-semibold'>{link.link}</a>
+              <a href={`#${link.link}`} key={link.id} className='hover:text-slate-900 transition capitalize font-semibold dark:hover:text-purple-300'>{link.link}</a>
               ))
           }
 
