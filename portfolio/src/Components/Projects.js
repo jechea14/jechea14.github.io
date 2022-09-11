@@ -15,7 +15,8 @@ const projects = [
     desc: 'Designed and developed a personal portfolio to showcase skills and projects. Utilized mobile-first approach and semantic HTML for accessibility.',
     img: `${portfolio}`,
     linkDemo: 'https://jeaniechea.vercel.app',
-    linkCode: 'https://github.com/jechea14/jechea14.github.io'
+    linkCode: 'https://github.com/jechea14/jechea14.github.io',
+    completed: true
   },
   {
     id: 2,
@@ -24,14 +25,16 @@ const projects = [
     desc: 'Developed an advice generator that generates random advice whenever a button is clicked. The Advice Slip API was used to generate random quotes of advice.',
     img: `${advice_generator_app}`,
     linkDemo: 'https://jechea14.github.io/advice-generator-app/',
-    linkCode: 'https://github.com/jechea14/advice-generator-app'
+    linkCode: 'https://github.com/jechea14/advice-generator-app',
+    completed: true
   },
   {
     id: 3,
     title: 'Backend Store Catalog Integration',
     tech: 'Python3, Pandas, NumPy, API',
     desc: 'Integrated sample client store catalog data into a Flask ingestion REST API with authentication. Cleaned and transformed sample client data then used HTTP requests to send data into a sample api given user authentication.',
-    img: `${backend_catalog_integration}`
+    img: `${backend_catalog_integration}`,
+    completed: true
   },
   {
     id: 4,
@@ -40,7 +43,8 @@ const projects = [
     desc: 'Developed an automated game competition web scraper to scrape data off of a RuneScape player tracking website and calculate competition results, which reduced the time required to prepare results by 80%.',
     img: `${rs_clan_comp_scraper}`,
     linkDemo: 'https://www.youtube.com/watch?v=mAiOTb76Poc',
-    linkCode: 'https://github.com/jechea14/Automated-RS-Clan-DXP-Competition'
+    linkCode: 'https://github.com/jechea14/Automated-RS-Clan-DXP-Competition',
+    completed: true
   },
   {
     id: 5,
@@ -49,7 +53,8 @@ const projects = [
     desc: 'Implemented a basic REST inventory management API with authentication and permissions. Created CRUD operatin views and used SQLite database to store data.',
     img: `${inventory_rest_api}`,
     linkDemo: 'https://www.youtube.com/watch?v=PM5A7jvtxFM',
-    linkCode: 'https://github.com/jechea14/django-inventory-api'
+    linkCode: 'https://github.com/jechea14/django-inventory-api',
+    completed: true
   },
   {
     id: 6,
@@ -58,17 +63,36 @@ const projects = [
     desc: 'Developed a Discord bot to web scrape RuneScape Wiki web pages based on user input to extract data. Calculated and displayed the total cost in RuneScape currency and amount of materials needed.',
     img: `${rs_web_scrape_discord_bot}`,
     linkDemo: 'https://www.youtube.com/watch?v=sEGjhaAngnM',
-    linkCode: 'https://github.com/jechea14/RSArchArtefactMaterialCalculator'
-
+    linkCode: 'https://github.com/jechea14/RSArchArtefactMaterialCalculator',
+    completed: true
+  },
+  {
+    id: 7,
+    title: 'Video Game Dex',
+    tech: 'ReactJS, API, NextJS',
+    desc: "Developing a video game database website of over 750,000 titles using RAWG's video game API.",
+    img: ``,
+    linkDemo: '',
+    linkCode: 'https://github.com/jechea14/videogamedex',
+    completed: false
   }
 ]
+
+const currentProjects = projects.filter((proj) => {
+  return proj.completed === false
+})
+
+const completedProjects = projects.filter((proj) => {
+  return proj.completed === true
+})
 
 const Projects = () => {
   return (
     <section id='projects' className='scroll-mt-8 dark:text-gray-200'>
       <h1 className='text-2xl font-bold text-left pb-6 pt-10'>PROJECTS</h1>
+      <h1 className='text-xl font-bold text-left pb-6 pt-5'>CURRENT PROJECT</h1> 
       <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 lg:grid-cols-3'>
-        {projects.map((project) => {
+        {currentProjects.map((project) => {
           return <ProjectCard 
                   title={project.title} 
                   techUsed={project.tech}
@@ -78,7 +102,21 @@ const Projects = () => {
                   linkCode={project.linkCode}
                   id={project.id}
                   />
-                  
+        })
+        }
+      </div>
+      <h1 className='text-xl font-bold text-left pb-6 pt-10'>COMPLETED PROJECTS</h1> 
+      <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 lg:grid-cols-3'>
+        {completedProjects.map((project) => {
+          return <ProjectCard 
+                  title={project.title} 
+                  techUsed={project.tech}
+                  description={project.desc}
+                  image={project.img}
+                  linkDemo={project.linkDemo}
+                  linkCode={project.linkCode}
+                  id={project.id}
+                  />
         })
         }
       </div>
