@@ -72,7 +72,7 @@ const projects = [
     tech: 'ReactJS, API, NextJS',
     desc: "Developing a video game database website of over 750,000 titles using RAWG's video game API.",
     img: ``,
-    linkDemo: '',
+    linkDemo: 'https://videogamedex.vercel.app/',
     linkCode: 'https://github.com/jechea14/videogamedex',
     completed: false
   }
