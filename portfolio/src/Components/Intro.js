@@ -8,7 +8,7 @@ const Intro = () => {
     <section id='home' className='md:flex md:justify-around mb-20 lg:justify-center scroll-mt-20 dark:text-gray-200'>
       {/* picture */}
       <picture className='flex justify-center mt-4'>
-        <img src={self_image} alt='self' className='rounded-full w-72 md:w-auto h-auto max-w-md md:max-h-72'/>
+        <img src={self_image} alt='self' loading='lazy' className='rounded-full w-72 md:w-auto h-auto max-w-md md:max-h-72'/>
       </picture>
 
       {/* description */}
