@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ProjectContext } from './Projects'
 
-const Button = ({name, link, id}) => {
+const Button = ({name, link}) => {
+  const id = useContext(ProjectContext);
+
   return (
     <div>
       {

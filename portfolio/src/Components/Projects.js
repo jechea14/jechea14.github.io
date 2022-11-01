@@ -6,6 +6,9 @@ import backend_catalog_integration from '../images/backend_catalog_integration.p
 import inventory_rest_api from '../images/inventory_rest_api.png'
 import rs_web_scrape_discord_bot from '../images/rs_web_scrape_discord_bot.png'
 import portfolio from '../images/portfolio.png'
+import { createContext } from 'react'
+
+export const ProjectContext = createContext();
 
 const projects = [
   {
@@ -89,37 +92,45 @@ const completedProjects = projects.filter((proj) => {
 const Projects = () => {
   return (
     <section id='projects' className='scroll-mt-8 dark:text-gray-200'>
-      <h1 className='text-2xl font-bold text-left pb-6 pt-10'>PROJECTS</h1>
-      <h1 className='text-xl font-bold text-left pb-6 pt-5'>CURRENT PROJECT</h1> 
-      <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 lg:grid-cols-3'>
-        {currentProjects.map((project) => {
-          return <ProjectCard 
-                  title={project.title} 
-                  techUsed={project.tech}
-                  description={project.desc}
-                  image={project.img}
-                  linkDemo={project.linkDemo}
-                  linkCode={project.linkCode}
-                  id={project.id}
-                  />
-        })
-        }
-      </div>
-      <h1 className='text-xl font-bold text-left pb-6 pt-10'>COMPLETED PROJECTS</h1> 
-      <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 lg:grid-cols-3'>
-        {completedProjects.map((project) => {
-          return <ProjectCard 
-                  title={project.title} 
-                  techUsed={project.tech}
-                  description={project.desc}
-                  image={project.img}
-                  linkDemo={project.linkDemo}
-                  linkCode={project.linkCode}
-                  id={project.id}
-                  />
-        })
-        }
-      </div>
+      
+        <h1 className='text-2xl font-bold text-left pb-6 pt-10'>PROJECTS</h1>
+        <h1 className='text-xl font-bold text-left pb-6 pt-5'>CURRENT PROJECT</h1> 
+        <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 lg:grid-cols-3'>
+          {currentProjects.map((project) => {
+            return ( 
+            <ProjectContext.Provider value={project.id} key={project.id}>
+              <ProjectCard 
+                      title={project.title} 
+                      techUsed={project.tech}
+                      description={project.desc}
+                      image={project.img}
+                      linkDemo={project.linkDemo}
+                      linkCode={project.linkCode}
+                      />
+            </ProjectContext.Provider>
+          )
+          })
+          }
+        </div>
+        <h1 className='text-xl font-bold text-left pb-6 pt-10'>COMPLETED PROJECTS</h1> 
+        <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 lg:grid-cols-3'>
+          {completedProjects.map((project) => {
+            return ( 
+              <ProjectContext.Provider value={project.id} key={project.id}>
+                <ProjectCard
+                        title={project.title} 
+                        techUsed={project.tech}
+                        description={project.desc}
+                        image={project.img}
+                        linkDemo={project.linkDemo}
+                        linkCode={project.linkCode}
+                        />
+              </ProjectContext.Provider>
+            )
+          })
+          }
+        </div>
+      
     </section>
   )
 }
