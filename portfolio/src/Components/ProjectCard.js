@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-const ProjectCard = ({ title, techUsed, description, image, linkDemo, linkCode, id}) => {
+const ProjectCard = ({ title, techUsed, description, image, linkDemo, linkCode}) => {
   return (
     <div className='flex flex-col justify-between border rounded-xl text-center bg-gray-50 shadow-md hover:shadow-xl hover:transition dark:bg-slate-700 dark:border-slate-700'>  
       <div>
@@ -22,8 +22,8 @@ const ProjectCard = ({ title, techUsed, description, image, linkDemo, linkCode, 
       {/* Demo and Code buttons */} 
       <div className='border-t-2 mx-4'>
         <div className='flex justify-evenly py-4'>
-          <Button name={'Demo'} link={linkDemo} id={id}/>
-          <Button name={'Code'} link={linkCode} id={id}/>
+          <Button name={'Demo'} link={linkDemo}/>
+          <Button name={'Code'} link={linkCode}/>
         </div>
       </div>
     </div>
