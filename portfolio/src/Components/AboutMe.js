@@ -12,12 +12,12 @@ const AboutMe = () => {
         <p>
           I learned Python and enjoyed it from building <span className='hover:cursor-pointer underline'><a href='https://github.com/jechea14/Automated-RS-Clan-DXP-Competition' target='_blank'>web scrapers</a></span> and <span className='hover:cursor-pointer underline'><a href='https://github.com/jechea14/django-inventory-api' target='_blank'>APIs</a></span> and wanted to go into back-end web development with Python. 
           However, I became very interested in front-end development while developing my web scrapers as I wanted to display data on a webpage. 
-          After learning HTML, CSS, JavaScript, and other front-end technologies, I fell in love with front-end and wanted to learn more about the front-end world and pursue front-end web development as a software engineer.
+          I fell in love with front-end while learning HTML, CSS, JavaScript, and other front-end technologies, and I wanted to learn more about the front-end world and pursue front-end web development as a software engineer.
         </p>
         <p>
-          I love coding and solving problems through code, and I am excited to work alongside other engineers and learn so much more! 
-          I'm looking for opportunities in junior/new grad front-end web development positions to start my career and learn among professionals.
-          I'm also open to back-end software engineering positions as well.
+          I am looking for opportunities in junior/new grad front-end web development positions to start my career and learn among professionals. Feel free to reach out and connect with me!
+          I love coding and solving problems with code, and I am excited to work with other engineers to learn so much more! I am willing to learn to expand my knowledge and experience.
+          I am also open to back-end software engineering positions as well. I believe opportunities happen for a reason.
         </p>
       </div>      
     </section>
