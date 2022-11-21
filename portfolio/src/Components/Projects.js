@@ -6,6 +6,7 @@ import backend_catalog_integration from '../images/backend_catalog_integration.p
 import inventory_rest_api from '../images/inventory_rest_api.png'
 import rs_web_scrape_discord_bot from '../images/rs_web_scrape_discord_bot.png'
 import portfolio from '../images/portfolio.png'
+import videogamedex from '../images/video_game_dex.png'
 import { createContext } from 'react'
 
 export const ProjectContext = createContext();
@@ -74,7 +75,7 @@ const projects = [
     title: 'Video Game Dex',
     tech: 'ReactJS, API, NextJS',
     desc: "Developing a video game database website of over 750,000 titles using RAWG's video game API.",
-    img: ``,
+    img: `${videogamedex}`,
     linkDemo: 'https://videogamedex.vercel.app/',
     linkCode: 'https://github.com/jechea14/videogamedex',
     completed: false
