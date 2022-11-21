@@ -79,7 +79,17 @@ const projects = [
     linkDemo: 'https://videogamedex.vercel.app/',
     linkCode: 'https://github.com/jechea14/videogamedex',
     completed: false
-  }
+  },
+  {
+    id: 8,
+    title: 'Ecommerce',
+    tech: 'TBD',
+    desc: "TBD",
+    img: ``,
+    linkDemo: '',
+    linkCode: '',
+    completed: false
+  },
 ]
 
 const currentProjects = projects.filter((proj) => {
@@ -95,7 +105,7 @@ const Projects = () => {
     <section id='projects' className='scroll-mt-8 dark:text-gray-200'>
       
         <h1 className='text-2xl font-bold text-left pb-6 pt-10'>PROJECTS</h1>
-        <h1 className='text-xl font-bold text-left pb-6 pt-5'>CURRENT PROJECT</h1> 
+        <h1 className='text-xl font-bold text-left pb-6 pt-5'>CURRENT PROJECT(S)</h1> 
         <div className='grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 lg:grid-cols-3'>
           {currentProjects.map((project) => {
             return ( 
