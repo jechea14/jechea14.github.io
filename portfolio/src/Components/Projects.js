@@ -83,7 +83,7 @@ const projects = [
   {
     id: 8,
     title: 'Ecommerce',
-    tech: 'TBD',
+    tech: 'Typescript, NextJS, Tailwindcss',
     desc: "TBD",
     img: ``,
     linkDemo: '',
