@@ -82,12 +82,12 @@ const projects = [
   },
   {
     id: 8,
-    title: 'Ecommerce',
-    tech: 'Typescript, NextJS, Tailwindcss',
-    desc: "TBD",
+    title: 'Custome Mechanical Keyboard Ecommerce Website',
+    tech: 'TypeScript, NextJS, API, Tailwindcss, MaterialUI, MantinUI',
+    desc: "Developing an e-commerce website selling custom mechanical keyboards and parts, Implementing cart functionality for users to add and remove items from cart, Integrating user account authentication for users to have individual carts",
     img: ``,
-    linkDemo: '',
-    linkCode: '',
+    linkDemo: 'https://ecommerce-jechea14.vercel.app/',
+    linkCode: 'https://github.com/jechea14/ecommerce',
     completed: false
   },
 ]
