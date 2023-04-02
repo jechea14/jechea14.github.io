@@ -6,6 +6,7 @@ const Button = ({ name, link }) => {
 
   return (
     <div>
+      {/* Project that is private */}
       {id === 4 ? (
         <div className="font-bold text-purple-600 hover:text-purple-800 hover:cursor-not-allowed transition dark:text-purple-300 dark:hover:text-purple-400">
           <button className="line-through hover:cursor-not-allowed">
