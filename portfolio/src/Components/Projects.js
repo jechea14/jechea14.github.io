@@ -9,9 +9,6 @@ import portfolio from "../images/portfolio.png";
 import videogamedex from "../images/video_game_dex.png";
 import ecommerce from "../images/ecommerce.png";
 import etk_dxp from "../images/etk_dxp.png";
-import { createContext } from "react";
-
-export const ProjectContext = createContext();
 
 const projects = [
   {
@@ -50,6 +47,8 @@ const projects = [
     tech: "Python3, Pandas, NumPy, API",
     desc: "Integrated sample client store catalog data into a Flask ingestion REST API with authentication. Cleaned and transformed sample client data then used HTTP requests to send data into a sample api given user authentication.",
     img: `${backend_catalog_integration}`,
+    linkDemo: "",
+    linkCode: "https://github.com/jechea14/backend-integrations-test",
     completed: true,
   },
   {
@@ -122,16 +121,14 @@ const Projects = () => {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 lg:grid-cols-3">
         {currentProjects.map((project) => {
           return (
-            <ProjectContext.Provider value={project.id} key={project.id}>
-              <ProjectCard
-                title={project.title}
-                techUsed={project.tech}
-                description={project.desc}
-                image={project.img}
-                linkDemo={project.linkDemo}
-                linkCode={project.linkCode}
-              />
-            </ProjectContext.Provider>
+            <ProjectCard
+              title={project.title}
+              techUsed={project.tech}
+              description={project.desc}
+              image={project.img}
+              linkDemo={project.linkDemo}
+              linkCode={project.linkCode}
+            />
           );
         })}
       </div>
@@ -141,16 +138,14 @@ const Projects = () => {
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 lg:grid-cols-3">
         {completedProjects.map((project) => {
           return (
-            <ProjectContext.Provider value={project.id} key={project.id}>
-              <ProjectCard
-                title={project.title}
-                techUsed={project.tech}
-                description={project.desc}
-                image={project.img}
-                linkDemo={project.linkDemo}
-                linkCode={project.linkCode}
-              />
-            </ProjectContext.Provider>
+            <ProjectCard
+              title={project.title}
+              techUsed={project.tech}
+              description={project.desc}
+              image={project.img}
+              linkDemo={project.linkDemo}
+              linkCode={project.linkCode}
+            />
           );
         })}
       </div>
