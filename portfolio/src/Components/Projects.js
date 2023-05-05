@@ -136,6 +136,7 @@ const Projects = () => {
         COMPLETED PROJECTS
       </h1>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-6 lg:grid-cols-3">
+        {/* <div className="grid grid-cols-1 gap-4"> */}
         {completedProjects.map((project) => {
           return (
             <ProjectCard
