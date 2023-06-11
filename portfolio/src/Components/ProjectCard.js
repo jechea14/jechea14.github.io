@@ -17,7 +17,7 @@ const ProjectCard = ({
           src={image}
           alt={image}
           loading="lazy"
-          className="rounded-tl-xl rounded-tr-xl lg:rounded-tr-none lg:rounded-bl-xl"
+          className="rounded-tl-xl rounded-tr-xl lg:rounded-tr-none lg:rounded-bl-xl h-full w-full object-contain"
         />
       </div>
 
@@ -30,9 +30,11 @@ const ProjectCard = ({
           <p className="text-xs mb-2">{techUsed}</p>
           {/* project description */}
           <p className="text-left pt-2 border-t-2 pb-2">
-            {description.map((desc) => {
-              return <li className="list-disc">{desc}</li>;
-            })}
+            {description.map((desc, index) => (
+              <li key={index} className="list-disc">
+                {desc}
+              </li>
+            ))}
           </p>
         </div>
         <div className="flex justify-evenly py-14">
