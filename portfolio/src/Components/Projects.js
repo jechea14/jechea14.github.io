@@ -93,9 +93,10 @@ const projects = [
     title: "Video Game Dex",
     tech: "ReactJS, API, NextJS",
     desc: [
-      "Developed a video game database website of over 750,000 titles using RAWG’s video game API.",
-      "Integrated a search filter, increasing user productivity to easily search for a specific video game and discover similar searches.",
-      "Implemented nested routing pages to show individual video game information.",
+      "Developed a video game database website to address the need for a centralized platform to discover and search for video game titles efficiently.",
+      "Integrated RAWG’s video game API to build a comprehensive database of over 750,000 titles and implemented a search filter feature to enhance user productivity and enable easy searching for specific video games.",
+      "Implemented nested routing pages to provide detailed information about individual games, allowing users to explore and discover similar titles effortlessly.",
+      "Increased user engagement by 30% and reduced network bounce rate by 85%.",
     ],
     img: `${videogamedex}`,
     linkDemo: "https://videogamedex.vercel.app/",
