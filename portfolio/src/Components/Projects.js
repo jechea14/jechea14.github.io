@@ -9,6 +9,7 @@ import portfolio from "../images/portfolio.png";
 import videogamedex from "../images/video_game_dex.png";
 import ecommerce from "../images/ecommerce.png";
 import etk_dxp from "../images/etk_dxp.png";
+import Reveal from "./Reveal";
 
 const projects = [
   {
@@ -170,14 +171,16 @@ const Projects = () => {
       <div className="grid grid-cols-1 gap-4">
         {completedProjects.map((project) => {
           return (
-            <ProjectCard
-              title={project.title}
-              techUsed={project.tech}
-              description={project.desc}
-              image={project.img}
-              linkDemo={project.linkDemo}
-              linkCode={project.linkCode}
-            />
+            <Reveal key={project.title}>
+              <ProjectCard
+                title={project.title}
+                techUsed={project.tech}
+                description={project.desc}
+                image={project.img}
+                linkDemo={project.linkDemo}
+                linkCode={project.linkCode}
+              />
+            </Reveal>
           );
         })}
       </div>
