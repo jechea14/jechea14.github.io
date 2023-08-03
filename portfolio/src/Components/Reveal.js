@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
+// Reveal animation to fade in
 function Reveal({ children }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
