@@ -163,7 +163,8 @@ const Projects = () => {
             />
           );
         })}
-        None! Practicing leetcode... Portfolio rework coming soon &trade;
+        None! Practicing leetcode and/or exploring tech stacks... Portfolio
+        rework coming soon &trade;
       </div>
       <h1 className="text-xl font-bold text-left pb-6 pt-10">
         COMPLETED PROJECTS
